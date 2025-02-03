@@ -1,0 +1,134 @@
+@font-face {
+  font-family: voyage;
+  src: url(fonts/voyage-bold.otf);
+}
+
+@font-face {
+  font-family: dosis;
+  src: url(fonts/Dosis-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('img/fondo-vertical.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 1.5rem;
+}
+
+h2,
+h3,
+p,
+a,
+li {
+  color: #e9f0e9;
+  font-family: dosis;
+  line-height: 1.7rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-family: voyage;
+  color: #e9f0e9;
+}
+
+h2 {
+  font-size: 1.25rem;  
+}
+
+li {
+  list-style: none;
+}
+
+#main-nav {
+  display: none;
+}
+
+.redes-sociales ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin-top: 0.75rem;
+}
+
+.parrafo-1{
+  margin-top: 0.75rem;
+}
+
+
+
+/* ESCRITORIO */
+
+@media screen and ( min-width: 1024px ){
+
+  .container{
+    display: flex;
+  }
+
+  #main-header{
+    width: 50%;
+  }
+
+  #divisor{
+    width: 50%;
+    margin-top: 4rem;
+  }
+
+  h1{
+    font-size: 3.125rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+  }
+
+  body{
+    background-image: url('img/fondo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4.5rem 6rem 0;
+  }
+
+  
+  .parrafo-1{
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .parrafo-1 p{
+    line-height: 2rem;
+  }
+  
+  .redes-sociales ul{
+    margin-top: 1rem;
+  }
+  
+  #main-nav{
+    display: block;
+  
+  }
+  
+  #main-nav ul{
+    /* font-size: 1.25rem; */
+    margin-top: 2rem;
+  }
+
+  #main-nav ul li{
+    line-height: 2.2rem;
+  }
+}
